@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- BOOTSTRAP CSS LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- BOOTSTRAP CSS LINK -->
+    
+    <!-- External Css -->
+     <link rel="stylesheet" href="assests/aboutus.css">
+    <!-- External Css -->
+
+</head>
+<header>
+   <!-- Google Translate Widget -->
+   <div id="google_translate_element"></div>
+   <script type="text/javascript">
+     function googleTranslateElementInit() {
+       new google.translate.TranslateElement({ 
+         pageLanguage: 'en', 
+         layout: google.translate.TranslateElement.InlineLayout.SIMPLE 
+       }, 'google_translate_element');
+     }
+   </script>
+   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <nav class="navbar a">
+    <div class="container-fluid justify-content-center">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="assests/images/LOGO.png" alt="">
+      </a>
+    </div>
+  </nav>
+  
+
+
+
+
+
+  <nav class="navbar navbar-expand-lg">
+
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <ul class="navbar-nav  mx-auto">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="conatct.html">Contact Us</a>
+          </li>
+
+      
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Diet Plans & Recipes
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="cutting.html">Cutting</a></li>
+              <li><a class="dropdown-item" href="bulking.html">Bulking</a></li>
+              <!-- <li><a class="dropdown-item" href="">Athletes</a></li> -->
+          </li>
+        </ul>
+
+        <li class="nav-item ">
+          <a class="nav-link" href="user info.html">User Info</a>
+        </li>
+
+        <li class="nav-item ">
+          <a class="nav-link" href="carts.html">Slim&Bulk Me</a>
+        </li>
+
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+<main>
+<h1 class="topheading">ABOUT US</h1>
+
+<section id="welcome">
+    <h2 class="heading">Welcome to Nutra Life</h2>
+    <p>Our website is dedicated to nutrition-focused content, offering a variety of recipes tailored for cutting, bulking, and athletes. Users can access these recipes designed specifically to support their fitness goals: cutting for fat loss, bulking for muscle gain, and optimized nutrition for athletes. Additionally, our interactive form allows visitors to input their personal information to calculate their daily calorie needs for weight loss or gain. This personalized approach ensures that each user receives tailored advice and recipes to achieve their dietary and fitness objectives effectively.</p>
+</section>
+
+<section id="mission">
+    <h2 class="heading">Our Mission</h2>
+    <p>Our mission is to empower individuals on their journey towards better health and fitness through tailored nutrition solutions. By providing specialized recipes for cutting, bulking, and athletes, we aim to support diverse fitness goals effectively. Our interactive calorie calculator enables users to input their specific details, allowing us to offer personalized guidance on daily calorie intake for weight loss or gain. Through this approach, we strive to educate and empower our community, promoting a balanced and sustainable approach to nutrition that aligns with individual needs and aspirations.</p>
+</section>
+
+<section id="vision">
+    <h2 class="heading">Our Vision</h2>
+    <p>Our vision is to become a trusted leader in the realm of nutrition-focused resources, inspiring individuals globally to achieve optimal health and fitness. We envision a future where our specialized recipes for cutting, bulking, and athletes empower people to reach their fitness goals with confidence and ease. By leveraging innovative technology and personalized nutrition insights, we aim to foster a community that embraces balanced and sustainable dietary practices. Through continuous evolution and a commitment to excellence, we aspire to make a meaningful impact on the wellness journey of each individual we serve, promoting lifelong health and vitality.</p>
+</section>
+
+<section id="values">
+    <h2 class="heading">Our Motives</h2>
+    <ul>
+        <li><strong>Cutting:</strong> This section focuses on creating a calorie deficit to support fat loss. Fill out our form to calculate your required calorie intake based on your weight, and explore tailored recipes.</li>
+        <li><strong>Bulking:</strong> For those looking to gain muscle mass, we provide resources to help you determine your calorie needs. Discover recipes designed for muscle building and optimal nutrition.</li>
+        
+    </ul>
+</section>
+
+<div class="container">
+  <div class="comment-box">
+    <h3 style="font-weight: bolder;  color: #FFD631;  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); text-decoration: underline;">Leave your review</h3>
+    <textarea id="review" class="form-control" placeholder="Type your review here..." rows="4"></textarea>
+    <div class="star-rating">
+      <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars">★</label>
+      <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars">★</label>
+      <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars">★</label>
+      <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars">★</label>
+      <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">★</label>
+    </div>
+    <button style="background-color:  #FFD631;" class="btn btn-primary" onclick="submitReview()">Submit</button>
+  </div>
+  
+  <div class="comments-section">
+    <h3>Customer Reviews</h3>
+    <ul id="comments-list">
+      <!-- Comments will be dynamically added here -->
+    </ul>
+  </div>
+</div>
+</main>
+
+
+ <!-- footer start -->
+  
+ <footer>
+    
+  <div>
+    <img src="assests/images/LOGO.png" width="200px" alt="">
+  </div>
+
+  <div class="footer-section">
+    <h4>Contact Us</h4>
+    <p>+92 321 124 1462</p>
+    <p><a style="color:black;text-decoration: none;" href="http://127.0.0.1:5500/index.html#">www.nutra life.com</a></p>
+
+  </div>
+
+  <div class="footer-section">
+    <h4>Follow Us</h4>
+    <p><img src="assests/images/yt-removebg-preview.png" width="30px"><img src="assests/images/ins-removebg-preview.png"
+        width="30px"><img src="assests/images/fb-removebg-preview.png" width="20px"><img
+        src="assests/images/tw-removebg-preview.png" width="35px"></p>
+  </div>
+
+  <div>
+    <img src="assests/images/Untitled.png" width="100px" alt="">
+  </div>
+
+</footer>
+
+ <!-- footer end -->
+
+
+   
+
+
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!-- BOOTSTRAP JS -->
+
+
+
+
+
+<script>
+    function submitReview() {
+  // Get review text
+  let reviewText = document.getElementById('review').value.trim();
+  
+  // Get rating
+  let rating = getRating();
+  
+  if (reviewText === '' || rating === 0) {
+    alert('Please enter your review and rating.');
+    return;
+  }
+  
+  // Create new comment element
+  let commentElement = document.createElement('li');
+  commentElement.innerHTML = `
+    <div>
+      <strong>Rating: ${rating} stars</strong><br>
+      ${reviewText}
+    </div>
+  `;
+  
+  // Add new comment to comments list
+  let commentsList = document.getElementById('comments-list');
+  commentsList.insertBefore(commentElement, commentsList.firstChild);
+  
+  // Clear input fields
+  document.getElementById('review').value = '';
+  clearRating();
+}
+
+function getRating() {
+  let stars = document.getElementsByName('rating');
+  for (let i = 0; i < stars.length; i++) {
+    if (stars[i].checked) {
+      return parseInt(stars[i].value);
+    }
+  }
+  return 0; // Default return if no star is selected
+}
+
+function clearRating() {
+  let stars = document.getElementsByName('rating');
+  for (let i = 0; i < stars.length; i++) {
+    stars[i].checked = false;
+  }
+}
+
+  </script>
+</body>
+</html>

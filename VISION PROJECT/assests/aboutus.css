@@ -1,0 +1,250 @@
+/* about us header css */
+
+.navbar-nav .nav-link {
+    color: #222222 ;
+    
+}
+
+ .logo {
+  width: 100px; 
+  height: auto; 
+}
+.navbar-brand .logo {
+    width: 120px; 
+    height: auto; 
+}
+
+
+
+.a{
+    background-color: #FFD631 ;
+}
+
+nav{
+    font-size:larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid  #222222;
+
+}
+
+
+.dropdown-item {
+  color: #222222;
+  background-color: #FFD631;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*=============== BREAKPOINTS ===============*/
+  /* For small devices */
+  @media screen and (max-width: 340px) {
+    .container {
+      margin-inline: 1rem;
+    }
+  
+    .card__data {
+      width: 250px;
+      padding: 1rem;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (min-width: 768px) {
+    .card__container {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1.5rem;
+    }
+  }
+  
+  /* For large devices */
+  @media screen and (min-width: 1120px) {
+    .container {
+      height: auto;
+    }
+  
+    .card__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .card__img {
+      width: 348px;
+    }
+    .card__data {
+      width: 316px;
+      padding-inline: 2.5rem;
+    }
+  }
+
+  /* about us header css end */
+
+
+
+
+
+
+
+
+/* about us css */
+
+
+.topheading {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: #f8b400;
+    margin-bottom: 10px;
+    color:#FFD631;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  
+
+
+/* styles.css */
+
+
+
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.heading {
+    margin-bottom: 10px;
+    color: #FFD631;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+.image-gallery ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+
+.image-gallery li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+
+.image-gallery img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .image-gallery img {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-gallery img {
+        max-width: 75px;
+    }
+}
+
+
+/* footer css  */
+
+footer {
+  background-color:  #FFD631;
+  color: black; 
+  padding: 5px;
+  text-align: center;
+}
+
+
+@media (max-width: 991px) {
+  footer {
+    display: block;
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 992px) {
+  footer {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+    text-align: center;
+  }
+}
+
+@media (max-width: 733px) {
+  
+  .footer-section p {
+    width: auto !important;
+    justify-content: center;
+  }
+}
+
+.footer-section {
+  margin: 10px;
+}
+
+
+
+.star {
+  font-size: 24px;
+  cursor: pointer;
+}
+.star:hover {
+  color: #FFD631;
+}
+
+
+
+
+
+
+
+
+

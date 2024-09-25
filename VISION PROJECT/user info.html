@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Caloric Intake Calculator</title>
+
+    <!-- BOOTSTRAP CSS LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- BOOTSTRAP CSS LINK -->
+    
+    <!-- External Css -->
+     <link rel="stylesheet" href="assests/userinfo.css">
+    <!-- External Css -->
+</head>
+
+<body>
+  
+  
+    <header> 
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ 
+              pageLanguage: 'en', 
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE 
+            }, 'google_translate_element');
+          }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+    <!-- NAV BAR START  -->
+
+    
+    
+        <nav class="navbar a">
+          <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="#">
+              <img class="logo" src="assests/images/LOGO.png" alt="">
+            </a>
+          </div>
+        </nav>
+    
+        <nav class="navbar navbar-expand-lg">
+    
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+              <ul class="navbar-nav  mx-auto">
+    
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+    
+                <li class="nav-item ">
+                  <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+    
+                <li class="nav-item ">
+                  <a class="nav-link" href="conatct.html">Contact Us</a>
+                </li>
+    
+            
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Diet Plans & Recipes
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="cutting.html">Cutting</a></li>
+                    <li><a class="dropdown-item" href="bulking.html">Bulking</a></li>
+                    <!-- <li><a class="dropdown-item" href="">Athletes</a></li> -->
+                </li>
+              </ul>
+    
+              <li class="nav-item ">
+                <a class="nav-link" href="user info.html">User Info</a>
+              </li>
+
+              <li class="nav-item ">
+                <a class="nav-link" href="carts.html">Slim&Bulk Me</a>
+              </li>
+    
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <main class="mt-5 mb-5">
+
+
+        <div class="container">
+            <h2 style="color: #FFD631; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); ">Daily Caloric Intake Calculator</h2>
+            <form id="intakeForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Age (years):</label>
+                    <input type="number" id="age" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="goal">Goal:</label>
+                    <select id="goal">
+                        <option value="loss">Weight Loss</option>
+                        <option value="gain">Weight Gain</option>
+                    </select>
+                </div>
+                
+                <button type="submit" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Calculate Daily Intake</button>
+            </form>
+        
+            <div id="result" style="display:none;">
+                <h3>Estimated Daily Intake</h3>
+                <p id="intakeResult"></p>
+            </div>
+        </div>
+    </main>
+   
+
+ <!-- footer start -->
+  
+ <footer style="margin-top: 80px;">
+    
+    <div>
+      <img src="assests/images/LOGO.png" width="200px" alt="">
+    </div>
+  
+    <div class="footer-section">
+      <h4>Contact Us</h4>
+      <p>+92 321 124 1462</p>
+      <p><a style="color:black;text-decoration: none;" href="http://127.0.0.1:5500/index.html#">www.nutra life.com</a></p>
+  
+    </div>
+  
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <p><img src="assests/images/yt-removebg-preview.png" width="30px"><img src="assests/images/ins-removebg-preview.png"
+          width="30px"><img src="assests/images/fb-removebg-preview.png" width="20px"><img
+          src="assests/images/tw-removebg-preview.png" width="35px"></p>
+    </div>
+  
+    <div>
+      <img src="assests/images/Untitled.png" width="100px" alt="">
+    </div>
+  
+  </footer>
+  
+   <!-- footer end -->    
+
+
+
+
+
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!-- BOOTSTRAP JS -->
+<script>
+    document.getElementById('intakeForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        calculateDailyIntake();
+    });
+    
+    function calculateDailyIntake() {
+        var name = document.getElementById('name').value;
+        var age = parseInt(document.getElementById('age').value);
+        var height = parseFloat(document.getElementById('height').value);
+        var weight = parseFloat(document.getElementById('weight').value);
+        var goal = document.getElementById('goal').value;
+    
+        if (!name || isNaN(age) || isNaN(height) || isNaN(weight)) {
+            alert('Please fill out all fields with valid information.');
+            return;
+        }
+    
+        var basalMetabolicRate = 10 * weight + 6.25 * height - 5 * age + 5;
+        var dailyIntake = basalMetabolicRate * 1.2;
+    
+        var adjustedIntake;
+        var calorieChangePercentage;
+        var message;
+    
+        if (goal === 'loss') {
+            calorieChangePercentage = 20;
+            adjustedIntake = dailyIntake * ((100 - calorieChangePercentage) / 100);
+            message = `your estimated daily caloric intake for weight loss is`;
+        } else if (goal === 'gain') {
+            calorieChangePercentage = 10;
+            adjustedIntake = dailyIntake * ((100 + calorieChangePercentage) / 100);
+            message = `your estimated daily caloric intake for weight gain is`;
+        }
+    
+        // Calculate macronutrient breakdown
+        var carbsPercentage = 50;
+        var fatPercentage = 30; 
+    
+        var carbsIntake = adjustedIntake * (carbsPercentage / 100) / 4; 
+        var fatIntake = adjustedIntake * (fatPercentage / 100) / 9; 
+    
+        var resultElement = document.getElementById('intakeResult');
+        resultElement.innerHTML = `
+            <p>${name}, ${message}:</p>
+            <p><strong>Before adjustment: ${dailyIntake.toFixed(2)} calories.</strong></p>
+            <p><strong>After adjustment: ${adjustedIntake.toFixed(2)} calories.</strong></p>
+            <p>For your goal, your estimated daily intake should include approximately:</p>
+            <ul>
+                <li><strong>${carbsIntake.toFixed(2)} grams of carbs.</strong></li>
+                <li><strong>${fatIntake.toFixed(2)} grams of fat.</strong></li>
+            </ul>
+        `;
+    
+        var resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+    }
+    </script>
+</body>
+</html>
